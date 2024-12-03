@@ -51,11 +51,15 @@ Compile the contracts:
 
 ```
 npx hardhat compile
+#or
+yarn hardhat compile
 ```
 
 Deploy the contracts:
 ```
 npx hardhat run scripts/deploy.js --network sepolia
+#or
+yarn hardhat deploy --network sepolia
 ```
 
 Fund the contract: You can fund the contract by running:
@@ -64,12 +68,17 @@ npx hardhat run scripts/Fundme.js --network sepolia
 ```
 
 Withdraw funds: To withdraw the funds, run:
-
 ```
 npx hardhat run scripts/withdraw.js --network sepolia
 ```
 
 Testing
+
+Run the staging test on testnet using hardhat:
+```
+yarn hardhat test --network sepolia
+```
+
 Run the unit tests using Hardhat:
 
 ```
